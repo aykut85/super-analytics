@@ -1,2 +1,2 @@
 # super-analytics
-Analaytics and Business Intelligence
+Analytics and Business Intelligence
