@@ -1,0 +1,53 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    // Complete the staircase function below.
+    static void staircase(int n) {
+    String space = " ";
+    String character = "#";
+    
+    String [][] stair = new String[n][n]; 
+    
+    if (n>1) {
+for (int i=0;i<n;i++){
+    for(int x=0;x<n-1-i;x++)
+    	stair[i][x]=space;
+ 
+	for (int y=n-1;y>=n-1-i;y--)
+		stair[i][y] = character;
+	for (int z=0;z<n;z++ )
+		System.out.printf(stair[i][z]);
+	    
+	    System.out.printf("\n");
+	
+	
+	}
+    
+    		}
+    
+    else {
+    	stair[0][0]= "#";
+    System.out.printf(stair[0][0]);
+    }
+ 
+    	
+    
+    }
+
+
+
+    public static void main(String[] args) {
+        
+
+        staircase(6);
+
+   
+    }
+}
